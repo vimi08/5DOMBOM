@@ -3,29 +3,48 @@
   background: linear-gradient(135deg, #11998e, #38ef7d);
   padding: 4rem 2rem;
 }
-#hero h1, #hero p {
+#hero h1,
+#hero p {
   color: #fff;
 }
-
 
 .reloj-hora {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 5px;
-  text-shadow: 5px 10px 3px rgba(0,0,0,0.7);
+  text-shadow: 5px 10px 3px rgba(0, 0, 0, 0.7);
 }
 
 .reloj-ampm {
   font-size: 1rem;
   font-weight: bold;
   color: #f8f9fa;
-   text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 
 .reloj-segundos {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #11a71e; 
+  color: #11a71e;
   margin-top: 0.2rem;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+#hero button {
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+#hero button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px currentColor;
+}
+
+#hero button:hover i {
+  color: #fff;
+}
+
+#hero button:active {
+  transform: scale(0.9);
+  opacity: 0.8;
 }
