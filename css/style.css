@@ -1,0 +1,8 @@
+#hero {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  padding: 4rem 2rem;
+}
+#hero h1, #hero p {
+  color: #fff;
+}
