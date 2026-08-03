@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ejercicio 4 - Reloj" />
+    <meta name="author" content="Victoria Micaela Ponce" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Ejercicio 4 - Reloj</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-success fw-bold" href="../index.html"
+            >DOM y BOM</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuTP5"
+            aria-controls="menuTP5"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menuTP5">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="./01-magicos.html">Números Mágicos</a>
+              <a class="nav-link" href="./02-generacion.html">Generaciones</a>
+              <a class="nav-link" href="./03-listaTareas.html"
+                >Lista de Tareas</a
+              >
+              <a class="nav-link active" href="./04-reloj.html">Reloj</a>
+              <a class="nav-link" href="./05-cronometro.html">Cronómetro</a>
+              <a class="nav-link" href="./06-temporizador.html">Temporizador</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main
+      id="hero"
+      class="container d-flex justify-content-center align-items-center reloj-container"
+    >
+      <div class="text-center">
+        <h2
+          class="fw-bold text-bg-info bg-dark bg-opacity-75 d-inline-block px-3 py-2 rounded"
+        >
+          Ejercicio 4 - Reloj
+        </h2>
+        <!-- contenedor del reloj -->
+        <div class="card shadow-lg p-4 bg-dark bg-opacity-75 text-white">
+          <div class="card-body">
+            <!-- Fecha -->
+            <div class="mb-3 border-bottom pb-2">
+              <h4 id="fecha" class="reloj-fecha"></h4>
+            </div>
+            <!-- Hora , AM-PM ,Segundos -->
+            <div class="d-flex justify-content-center align-items-start">
+              <!-- Horas y minutos -->
+              <h1 id="hora" class="reloj-hora me-3"></h1>
+              <!--segundos debajo -->
+              <div class="d-flex flex-column align-items-center">
+                <span id="ampm" class="reloj-ampm"></span>
+                <span id="segundos" class="reloj-segundos"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-center mt-5 mb-3">
+      <small>&copy; 2026 - Victoria Micaela Ponce</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/04-reloj.js"></script>
+  </body>
+</html>
